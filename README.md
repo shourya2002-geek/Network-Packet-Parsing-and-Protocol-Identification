@@ -27,7 +27,7 @@ the principle of locality of a reference which states that a program has a tende
 • In this algorithm, when a page fault occurs, then the page that has not been used for the longest duration of time is replaced by the newly requested page.
 
 
-## LRU Page Replacement Algorithm
+## LFU Page Replacement Algorithm
 
 LFU Page Replacement Algorithm-
  
@@ -54,6 +54,7 @@ Pseudocode of LFU Algorithm in OS
 • Upon a clock interrupt, the R bits are added to an array based on their corresponding indices and then the R bits are set back to 0.
 • The array is used to keep track of which pages are roughly used the least and then the algorithm evicts the page with the lowest corresponding count.
 
+# Methodology
 
 The GUI is based on React Js, which facilitates input of a reference string , and simulating the algorithms with interesting animations. 
 
