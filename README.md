@@ -1,70 +1,67 @@
-# Getting Started with Create React App
+# Simulation of Page Replacement Algorithms
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Our project, Page Replacement Algorithms is a concept under virtual memory in Operating Systems. Virtual memory involves the separation of logical memory as perceived by users from physical memory. This separation allows an extremely large virtual memory to be provided for programmers when only a smaller physical memory is available. Virtual memory makes the task of programming much easier because the programmer no longer needs to worry about the amount of physical memory available.
 
-## Available Scripts
+We have simulated 3 popular page replacement algorithms, LRU, FIFO, and LFU.
 
-In the project directory, you can run:
+## FIFO Page Replacement Algorithm
 
-### `npm start`
+ As the name suggests, this algorithm works on the principle of “First in First out “.
+• It is implemented by keeping track of all the pages in a queue. •
+It replaces the oldest page that has been present in the main memory for the longest time.
+•
+ This algorithm is similar to the operations of the queue. All the pages are stored
+ in the queue in the order they are allocated frames in the main memory. The
+ one which is allocated first stays in the front of the queue. The one which is
+ allocated the memory first is replaced first that is
+The one which is at the front of the queue is removed at the time of replacement.
+• While using the First In First Out algorithm, the number of page faults increases by increasing the number of frames. This phenomenon is called Belady's Anomaly
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## LRU Page Replacement Algorithm
 
-### `npm test`
+• As the name suggests, this algorithm works on the principle of “Least Recently Used“.
+• It replaces the page that has not been referred by the CPU for the longest time.
+• The least recently used page replacement algorithm keeps the track of usage of pages over a period of time. This algorithm works on the basis of
+the principle of locality of a reference which states that a program has a tendency to access the same set of memory locations repetitively over a short period of time. So pages that have been used heavily in the past are most likely to be used heavily in the future also.
+• In this algorithm, when a page fault occurs, then the page that has not been used for the longest duration of time is replaced by the newly requested page.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+## LRU Page Replacement Algorithm
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+LFU Page Replacement Algorithm-
+ 
+The Least frequently used (LFU) page replacement algorithm requires a counter, and
+every page has one counter of its own which is initially set to 0.
+At each clock interval, all pages that have been referenced within that interval will have
+their counter incremented by 1.
+In effect, the counters keep track of how frequently a page has been used. Thus, the
+page with the lowest counter can be swapped out when necessary.
+• • •
+•
+Advantages of LFU Page Replacement Algorithm
+Following are the advantages of the LFU page replacement algorithm:
+• Simple algorithm; may give adequate performance on some systems
+• It has the essential properties of any page replacement algorithm
+• It looks for a (relatively) idle page
+• It’s reasonably efficient
+Disadvantages of LFU Page Replacement Algorithm
+Following are the disadvantages of the LFU page replacement algorithm:
+• Bias towards discarding unmodified pages
+• It handles modified pages, but is biased against using them
+Pseudocode of LFU Algorithm in OS
+• If there are multiple references to a page within the same clock cycle, the count stays at 1.
+• Upon a clock interrupt, the R bits are added to an array based on their corresponding indices and then the R bits are set back to 0.
+• The array is used to keep track of which pages are roughly used the least and then the algorithm evicts the page with the lowest corresponding count.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+The GUI is based on React Js, which facilitates input of a reference string , and simulating the algorithms with interesting animations. 
 
-### `npm run eject`
+Our project provides an illustration of the various page replacement algorithms and provides a comparison of the number of page faults and the hit ratio for a given reference string.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Page fault occurs when a process tries to access a page that is not in memory. If the reference to a page is a valid address in the memory, a free frame is found, and the page referenced is brought into the memory or else we trap the process to the operating system. A page hit occurs when the process accesses a page already brought into the memory.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Page replacement algorithms complete the separation of the physical and the logical memory. With this mechanism, an enormous virtual memory can be provided for programmers on a smaller physical memory.
+Since the aim of any page replacement algorithm should be to lower the rate at which page faults occur, we illustrate the various algorithms in our project and compare their hit ratios and the number of page faults. Through this illustration, we are able to determine the algorithm with the best hit ratio for a given reference string. This hit ratio affects the effective access time. Effective access time is the average time taken to access a particular page.
+effective access time = (1 − p) × ma + p × page fault time.
+Where p is the rate of page faults and ma is the memory access time and (1-p) being the page hit ratio.
