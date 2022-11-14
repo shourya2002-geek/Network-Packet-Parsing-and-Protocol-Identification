@@ -1,0 +1,193 @@
+Packet number: 1 of size 42
+
+
+>>ETHERNET HEADER<<
+<>>>>>-Destination Address: FF-FF-FF-FF-FF-FF
+<>>>>>-Source Address: 8C-A3-99-F7-23-98
+<>>>>>>>-Protocol: 1544
+
+
+
+
+>>ARP HEADER<<
+<>>>>>-Hardware type : 1
+<>>>>>-Protocol Type : 2048
+<>>>>>-Hardware addr len: 1536
+<>>>>>-Protocol addr len: 1024
+<>>>>>--Operation : 1024
+
+
+Packet number: 2 of size 363
+
+
+>>ETHERNET HEADER<<
+<>>>>>-Destination Address: FF-FF-FF-FF-FF-FF
+<>>>>>-Source Address: 8C-A3-99-F7-23-98
+<>>>>>>>-Protocol: 8
+
+
+
+
+>>IP HEADER<<
+<>>>>-IP Version   : 4
+<>>>>-Type Of Service : 0
+<>>>>-IP Total Length : 349  Bytes(Size of Packet)
+<>>>>-Identification    : 40802
+<>>>>-TTL : 64
+<>>>>-Protocol : 17
+<>>>>-Checksum : 5597
+
+
+
+
+>>UDP Header<<
+<>>>>-Source Port  : 34939
+<>>>>-Destination Port : 9995
+<>>>>-UDP Length  : 329
+<>>>>-UDP Checksum : 32436
+
+
+Packet number: 3 of size 42
+
+
+>>ETHERNET HEADER<<
+<>>>>>-Destination Address: FF-FF-FF-FF-FF-FF
+<>>>>>-Source Address: 8C-A3-99-F7-23-98
+<>>>>>>>-Protocol: 1544
+
+
+
+
+>>ARP HEADER<<
+<>>>>>-Hardware type : 1
+<>>>>>-Protocol Type : 2048
+<>>>>>-Hardware addr len: 1536
+<>>>>>-Protocol addr len: 1024
+<>>>>>--Operation : 1024
+
+
+Packet number: 4 of size 42
+
+
+>>ETHERNET HEADER<<
+<>>>>>-Destination Address: FF-FF-FF-FF-FF-FF
+<>>>>>-Source Address: 8C-A3-99-F7-23-98
+<>>>>>>>-Protocol: 1544
+
+
+
+
+>>ARP HEADER<<
+<>>>>>-Hardware type : 1
+<>>>>>-Protocol Type : 2048
+<>>>>>-Hardware addr len: 1536
+<>>>>>-Protocol addr len: 1024
+<>>>>>--Operation : 1024
+
+
+Packet number: 5 of size 42
+
+
+>>ETHERNET HEADER<<
+<>>>>>-Destination Address: FF-FF-FF-FF-FF-FF
+<>>>>>-Source Address: 8C-A3-99-F7-23-98
+<>>>>>>>-Protocol: 1544
+
+
+
+
+>>ARP HEADER<<
+<>>>>>-Hardware type : 1
+<>>>>>-Protocol Type : 2048
+<>>>>>-Hardware addr len: 1536
+<>>>>>-Protocol addr len: 1024
+<>>>>>--Operation : 1024
+
+
+Packet number: 6 of size 42
+
+
+>>ETHERNET HEADER<<
+<>>>>>-Destination Address: FF-FF-FF-FF-FF-FF
+<>>>>>-Source Address: 8C-A3-99-F7-23-98
+<>>>>>>>-Protocol: 1544
+
+
+
+
+>>ARP HEADER<<
+<>>>>>-Hardware type : 1
+<>>>>>-Protocol Type : 2048
+<>>>>>-Hardware addr len: 1536
+<>>>>>-Protocol addr len: 1024
+<>>>>>--Operation : 1024
+
+
+Packet number: 7 of size 42
+
+
+>>ETHERNET HEADER<<
+<>>>>>-Destination Address: FF-FF-FF-FF-FF-FF
+<>>>>>-Source Address: 8C-A3-99-F7-23-98
+<>>>>>>>-Protocol: 1544
+
+
+
+
+>>ARP HEADER<<
+<>>>>>-Hardware type : 1
+<>>>>>-Protocol Type : 2048
+<>>>>>-Hardware addr len: 1536
+<>>>>>-Protocol addr len: 1024
+<>>>>>--Operation : 1024
+
+
+Packet number: 8 of size 363
+
+
+>>ETHERNET HEADER<<
+<>>>>>-Destination Address: FF-FF-FF-FF-FF-FF
+<>>>>>-Source Address: 8C-A3-99-F7-23-98
+<>>>>>>>-Protocol: 8
+
+
+
+
+>>IP HEADER<<
+<>>>>-IP Version   : 4
+<>>>>-Type Of Service : 0
+<>>>>-IP Total Length : 349  Bytes(Size of Packet)
+<>>>>-Identification    : 41439
+<>>>>-TTL : 64
+<>>>>-Protocol : 17
+<>>>>-Checksum : 4960
+
+
+
+
+>>UDP Header<<
+<>>>>-Source Port  : 34939
+<>>>>-Destination Port : 9995
+<>>>>-UDP Length  : 329
+<>>>>-UDP Checksum : 56087
+
+
+Packet number: 9 of size 42
+
+
+>>ETHERNET HEADER<<
+<>>>>>-Destination Address: FF-FF-FF-FF-FF-FF
+<>>>>>-Source Address: 8C-A3-99-F7-23-98
+<>>>>>>>-Protocol: 1544
+
+
+
+
+>>ARP HEADER<<
+<>>>>>-Hardware type : 1
+<>>>>>-Protocol Type : 2048
+<>>>>>-Hardware addr len: 1536
+<>>>>>-Protocol addr len: 1024
+<>>>>>--Operation : 1024
+
+
